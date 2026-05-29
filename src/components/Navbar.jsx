@@ -40,17 +40,17 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" onClick={(e) => handleClick(e, '#hero')} className="flex items-center gap-3">
+        <a href="#hero" onClick={(e) => handleClick(e, '#hero')} className="flex items-center gap-2">
           <img
             src="/items/pictures/logo.jpeg"
             alt="מקור האוכל והקינוחים"
             className={`rounded-full transition-all duration-500 border-2 border-gold/30 ${
-              scrolled ? 'w-20 h-20' : 'w-[110px] h-[110px]'
+              scrolled ? 'w-16 h-16' : 'w-24 h-24'
             }`}
           />
           <span
             className={`font-heading font-bold transition-all duration-500 ${
-              scrolled ? 'text-brand text-2xl' : 'text-white text-3xl drop-shadow-lg'
+              scrolled ? 'text-brand text-xl' : 'text-white text-2xl drop-shadow-lg'
             }`}
           >
             מקור האוכל והקינוחים
@@ -58,13 +58,13 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden xl:flex items-center gap-10">
+        <div className="hidden xl:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className={`text-lg font-medium transition-all duration-300 hover:text-gold relative
+              className={`text-base font-medium transition-all duration-300 hover:text-gold relative
                 after:content-[''] after:absolute after:bottom-[-4px] after:right-0 after:w-0 after:h-[2px] after:bg-gold after:transition-all after:duration-300 hover:after:w-full
                 ${scrolled ? 'text-charcoal' : 'text-white/90 hover:text-white'}`}
             >
