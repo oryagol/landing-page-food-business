@@ -38,7 +38,7 @@ export default function Navbar() {
           : 'top-4 bg-transparent py-5'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" onClick={(e) => handleClick(e, '#hero')} className="flex items-center gap-2">
           <img
@@ -58,7 +58,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden xl:flex items-center gap-6 xl:ml-20">
+        <div className="hidden xl:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
