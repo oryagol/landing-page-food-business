@@ -29,23 +29,23 @@ export default function Hero() {
       <div className="absolute inset-6 md:inset-12 border border-gold/20 rounded-lg pointer-events-none" />
 
       {/* Content */}
-      <div className={`relative z-10 text-center px-6 max-w-4xl ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`} style={{ paddingTop: '40px' }}>
+      <div className={`relative z-10 text-center px-6 max-w-4xl ${isVisible ? 'animate-fadeInUp' : 'opacity-0'}`} style={{ paddingTop: '32px' }}>
 
 
         {/* Main Headline */}
-        <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-xl">
+        <h1 className="font-heading text-3xl md:text-5xl font-bold text-white mb-4 leading-tight drop-shadow-xl">
           להתאהב בטעמים
         </h1>
 
         {/* Decorative Divider */}
-        <div className="flex items-center justify-center gap-3 mb-6">
+        <div className="flex items-center justify-center gap-3 mb-5">
           <div className="w-12 h-[1px] bg-gold/60" />
-          <span className="text-gold text-xl">✦</span>
+          <span className="text-gold text-lg">✦</span>
           <div className="w-12 h-[1px] bg-gold/60" />
         </div>
 
         {/* Services Tags */}
-        <div className="flex flex-wrap justify-center gap-3" style={{ marginBottom: '16px' }}>
+        <div className="flex flex-wrap justify-center gap-2.5" style={{ marginBottom: '14px' }}>
           {[
             'קייטרינג לאירועים',
             'מגשי אירוח',
@@ -56,13 +56,13 @@ export default function Hero() {
           ].map((service, i) => (
             <span
               key={i}
-              className={`inline-flex items-center justify-center text-white/90 text-sm md:text-base bg-white/10 backdrop-blur-sm rounded-full border border-white/15 transition-all duration-300 hover:bg-gold/20 hover:border-gold/40 ${isVisible ? `animate-fadeIn delay-${(i + 1) * 100}` : 'opacity-0'
+              className={`inline-flex items-center justify-center text-white/90 text-xs md:text-sm bg-white/10 backdrop-blur-sm rounded-full border border-white/15 transition-all duration-300 hover:bg-gold/20 hover:border-gold/40 ${isVisible ? `animate-fadeIn delay-${(i + 1) * 100}` : 'opacity-0'
                 }`}
               style={{
-                paddingTop: '10px',
-                paddingBottom: '10px',
-                paddingLeft: '24px',
-                paddingRight: '24px',
+                paddingTop: '8px',
+                paddingBottom: '8px',
+                paddingLeft: '18px',
+                paddingRight: '18px',
                 lineHeight: '1'
               }}
             >
@@ -73,11 +73,11 @@ export default function Hero() {
 
         {/* Why Choose Us */}
         <div className={`mb-2 ${isVisible ? 'animate-fadeInUp delay-300' : 'opacity-0'}`}>
-          <h3 className="font-heading text-xl md:text-2xl font-bold text-white mb-2">
+          <h3 className="font-heading text-lg md:text-xl font-bold text-white mb-2">
             למה לבחור בנו?
           </h3>
-          <div className="inline-block bg-black/15 backdrop-blur-md rounded-2xl border border-white/5 px-8 py-6 md:px-14 md:py-8 text-right">
-            <ul className="space-y-2 text-white/70 text-sm md:text-base leading-relaxed">
+          <div className="inline-block bg-black/15 backdrop-blur-md rounded-2xl border border-white/5 px-6 py-4 md:px-10 md:py-6 text-right">
+            <ul className="space-y-1.5 text-white/70 text-xs md:text-sm leading-relaxed">
               <li>💚 אוכל ביתי עם טעם של פעם</li>
               <li>💚 טריות ללא פשרות</li>
               <li>💚 יחס אישי וליווי מלא</li>
@@ -89,7 +89,7 @@ export default function Hero() {
         </div>
 
         {/* Spacer */}
-        <div className="h-3 md:h-4 w-full" aria-hidden="true"></div>
+        <div className="h-6 md:h-10 w-full" aria-hidden="true"></div>
 
         {/* CTA Button */}
         <div className="w-full">
@@ -98,12 +98,12 @@ export default function Hero() {
             href="https://wa.me/972507799833"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-lg font-bold rounded-full shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-gold/30 hover:-translate-y-1"
+            className="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-base font-bold rounded-full shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-gold/30 hover:-translate-y-1"
             style={{
-              paddingTop: '10px',
-              paddingBottom: '10px',
-              paddingLeft: '24px',
-              paddingRight: '24px',
+              paddingTop: '8px',
+              paddingBottom: '8px',
+              paddingLeft: '20px',
+              paddingRight: '20px',
             }}
           >
             <span>הזמנות</span>
