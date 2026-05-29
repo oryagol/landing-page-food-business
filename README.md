@@ -1,16 +1,65 @@
-# React + Vite
+# Landing Page for Food Business
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and dynamic landing page built for a food business (restaurant, catering, etc.) to showcase their menu, story, services, and customer reviews.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Hero Section**: An engaging introduction with a clear call-to-action.
+- **Story**: About the business and its culinary background.
+- **Services**: Overview of what the business offers (e.g., Dine-in, Takeaway, Catering).
+- **Gallery & Video Gallery**: Visual showcase of delicious dishes and the restaurant atmosphere.
+- **Reviews**: Customer testimonials and ratings.
+- **Contact**: Easy ways for customers to reach out, including a floating WhatsApp button for quick chat.
+- **Animations**: Smooth scroll reveal animations using custom hooks.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/) 19
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) v4
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run the project locally, follow these steps:
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/oryagol/landing-page-food-business.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd lending_page_food_source_bussiness
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development Server
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+
+### Build for Production
+
+To build the app for production deployment:
+
+```bash
+npm run build
+```
+
+The compiled assets will be placed in the `dist` folder.
