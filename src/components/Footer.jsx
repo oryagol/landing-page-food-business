@@ -33,6 +33,7 @@ export default function Footer() {
                 { label: 'הסיפור שלנו', href: '#story' },
                 { label: 'השירותים שלנו', href: '#services' },
                 { label: 'גלריה', href: '#gallery' },
+                { label: 'הכנת שולחנות', href: '#video-gallery' },
                 { label: 'המלצות', href: '#reviews' },
                 { label: 'צור קשר', href: '#contact' },
               ].map((link) => (
